@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+
+body{
+    font-family: Pretendard;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #292D31;
+    color: #C4D1DF;
+    position: relative;
+}
+
+a{
+    color: #C4D1DF;
+    text-decoration: none;
+}
+
+.back{
+    position: absolute;
+    top: -60px; left: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(./images/btn.png) no-repeat center;
+    background-size: 40px;
+    transform: rotate(180deg);
+    text-indent: -5000px;
+    overflow: hidden;
+}
+
+.cover{
+    width: 100%;
+    height: 400px;
+    background: url(./images/pet_cover_m.png) no-repeat center;
+    background-size: auto 400px;
+    border-top: 1px solid #455566;
+    border-bottom: 1px solid #455566;
+    margin: 60px 0;
+}
+
+.container{
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    color: #98AABC;
+    margin-bottom: 60px;
+}
+.container h3{
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    margin-top: 100px;
+}
+
+.container .story > span{
+    display: block;
+    margin-top: 40px;
+}
+.container .story p span{
+    color: #7C81F8;
+    font-weight: 600;
+}
+
+.wire .wire_img,
+.design .design_img,
+.admin .admin_img
+{
+    width: 100%;
+    margin-top: 40px;
+}
+.wire .wire_img{
+    height: 860px;
+    background: url(./images/pet_wire_2x.png) center no-repeat;
+    background-size: 1200px;
+}
+.design .design_img{
+    height: 900px;
+    background: url(./images/pet_design_2x.png) center no-repeat;
+    background-size: 1200px;
+}
+.admin .admin_img{
+    height: 710px;
+    background: url(./images/pet_admin_2x.png) center no-repeat;
+    background-size: 1200px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #25282c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right:10px;
+    box-sizing: border-box;
+}
+.toBack{
+    color: #717c87;
+    font-weight: 600;
+}
+#toTop{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(./images/btn.png) no-repeat center;
+    background-size: 30px;
+    transform: rotate(-90deg);
+    text-indent: -5000px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+@media (min-width: 800px) {
+    .cover{
+        height: 500px;
+        background-image: url(./images/pet_cover_pc.png);
+        background-size: auto 500px;
+    }
+}
+@media (min-width: 1350px) {
+    .back{
+        top: -65px; left: 15px;
+        width: 50px;
+        height: 50px;
+        background-size: 50px;
+    }
+    .cover{
+        height: 600px;
+        margin: 80px 0;
+        background-size: auto;
+    }
+    .container{
+        line-height: 50px;
+        font-size: 18px;
+    }
+    .container h3{
+        font-size: 26px;
+        margin-top: 130px;
+    }
+    #toTop{
+        width: 32px;
+        height: 32px;
+        background-size: 32px;
+    }
+}

@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+
+body{
+    font-family: Pretendard;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #292D31;
+    color: #C4D1DF;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 600px;
+}
+.container ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+    border-bottom: 1px solid rgba(152,170,188,.5);
+    text-align: right;
+    line-height: 1.4;
+}
+.container ul:last-child li{
+    border: none;
+}
+
+    .container ul li > a > img{
+        width: 320px;
+        height: 210px;
+    }
+    .container ul:nth-child(9) li > a > img{
+        width: 270px;
+        height: 178px;
+    }
+    .container ul:nth-child(10) li > a > img{
+        width: 200px;
+        height: 200px;
+    }
+    .container ul:nth-child(12) li > a > img{
+        width: 320px;
+        height: 202px;
+    }
+
+    .customer{
+        font-weight: 500;
+    }
+    .title{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .work{
+        font-size: 20px;
+        color: #98AABC;
+    }
+    .container ul li .text a img{
+        margin-top: 52px;
+        width: 38px;
+    }
+
+
+@media (max-width: 900px) {
+    .container{
+        width: 100%
+    }
+    .container ul li{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0;
+    }
+    .container ul li .text{
+        margin-top: 30px;
+    }
+    .container ul li .text a img{
+        margin-top: 30px;
+    }
+}

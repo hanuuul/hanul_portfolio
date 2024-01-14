@@ -1,0 +1,26 @@
+.cover{
+    background-image: url(./images/mind_cover_m.png);
+}
+
+.container .story p span{
+    color: #FF7356;
+}
+
+/* .wire .wire_img{
+    height: 860px;
+    background-image: url(./images/mind_wire_2x.png);
+}
+.design .design_img{
+    height: 900px;
+    background-image: url(./images/mind_design_2x.png);
+} */
+.admin .admin_img{
+    height: 617px;
+    background-image: url(./images/mind_admin_2x.png);
+}
+
+@media (min-width: 800px) {
+    .cover{
+        background-image: url(./images/mind_cover_pc.png);
+    }
+}

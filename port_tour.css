@@ -1,0 +1,26 @@
+.cover{
+    background-image: url(./images/tour_cover_m.png);
+}
+
+.container .story p span{
+    color: #FFD43C;
+}
+
+.wire .wire_img{
+    height: 430px;
+    background-image: url(./images/tour_wire_2x.png);
+}
+.design .design_img{
+    height: 800px;
+    background-image: url(./images/tour_design_2x.png);
+}
+.admin .admin_img{
+    height: 300px;
+    background-image: url(./images/tour_admin_2x.png);
+}
+
+@media (min-width: 800px) {
+    .cover{
+        background-image: url(./images/tour_cover_pc.png);
+    }
+}
